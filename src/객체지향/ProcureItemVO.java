@@ -1,4 +1,4 @@
-package Hello;
+package 객체지향;
 
 /**
  * 이렇게 작성하면 Java Doc 로 관리된다.
