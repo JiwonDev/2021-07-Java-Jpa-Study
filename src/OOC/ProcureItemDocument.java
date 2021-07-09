@@ -1,4 +1,4 @@
-package 객체지향;
+package OOC;
 
 /**
  * @author JiwonDev
