@@ -3,10 +3,10 @@ package Threads;
 import java.util.ArrayList;
 import java.util.stream.IntStream;
 
-public class Test2 implements Runnable {
+public class Thread2 implements Runnable {
     int seq;
 
-    public Test2(int seq) {
+    public Thread2(int seq) {
         this.seq = seq;
     }
 
@@ -23,7 +23,7 @@ public class Test2 implements Runnable {
         ArrayList<Thread> threads = new ArrayList<Thread>();
 
         IntStream.range(0, 10)
-                .mapToObj(i -> new Thread(new Test2(i)))
+                .mapToObj(i -> new Thread(new Thread2(i)))
                 .forEach(t -> {
                     t.start();
                     threads.add(t);
